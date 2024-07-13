@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function Main() {
   return (
- <div>
-    <img src="mars.png" alt="mar-demo-picture" />
- </div>
+    <div className='imageContainer'>
+    <img className='backgroundImage' src="mars.png" alt="mar-demo-picture" />
+
+    </div>
   )
 }
