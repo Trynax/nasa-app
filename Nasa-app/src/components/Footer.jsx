@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function Footer(props) {
 
-  const {handleToggleModal} = props
+  const {handleToggleModal, data} = props
   return (
     <footer>
         <div className='bgGraidient'></div>
         <div>
-            <h2>The Brutal Martin Landscape</h2>
+            <h2>{data?.title}</h2>
             <h1>APOD PROJECT</h1>
         </div>
         <button onClick={()=>{

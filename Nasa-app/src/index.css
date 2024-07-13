@@ -130,8 +130,15 @@ margin-left: auto;
   border: none;
   outline: none;
   margin-right: auto;
+  cursor: pointer;
+  transition: all 200ms;
+  padding: 1rem;
 }
 
+
+.sidebarContents button:hover{
+  opacity: 0.7;
+}
 
 
 
@@ -146,4 +153,22 @@ box-shadow: 0 0 10px 1px #030615;
 .sidebarContents{
   margin: unset;
 }
+}
+
+.LoadingState{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.LoadingState i{
+  opacity: 0.2;
+  font-size: 3rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
