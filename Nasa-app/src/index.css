@@ -124,6 +124,11 @@ margin-left: auto;
 
 }
 
+.sidebarContents h2{
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
 .sidebarContents button{
   background: transparent;
   color:  white;
@@ -132,7 +137,7 @@ margin-left: auto;
   margin-right: auto;
   cursor: pointer;
   transition: all 200ms;
-  padding: 1rem;
+  padding: 1rem 0rem;
 }
 
 
@@ -140,7 +145,15 @@ margin-left: auto;
   opacity: 0.7;
 }
 
-
+.descriptionTitle{
+   font-size: 1.1rem;
+   font-weight: 200;
+}
+.descriptionContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 @media (min-width: 640px) {
 .sidebar{

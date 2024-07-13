@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Main() {
+export default function Main(props) {
+
+  const {data}= props
   return (
     <div className='imageContainer'>
-    <img className='backgroundImage' src="mars.png" alt="mar-demo-picture" />
+    <img className='backgroundImage' src={data?.url} alt={data.title || "bg-image"} />
 
     </div>
   )
